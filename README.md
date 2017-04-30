@@ -125,22 +125,12 @@ To train the model, I did not use an optimizer, my batch size was set to 64 and 
 The code for calculating the accuracy of the model is located in the ninth cell of the Ipython notebook.
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* validation set accuracy of 0.948
+* test set accuracy of 0.941
 
-If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
-* What were some problems with the initial architecture?
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to over fitting or under fitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* Which parameters were tuned? How were they adjusted and why?
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+I chose LeNet-5 architecture for its straight forwardness and it being well explored and tested for image classification tasks. I ammended the architecture by adding two layers of dropouts to the first and second fully connected layers to enhance the stability of the model.
+having a good accuracy of almost 0.95 for some runs I believe this model to be suitable for a first start in image classification. This is also supported by a score of 3 out of 5 new images being recognized by the model.
 
-If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
 
 ### Test a Model on New Images
 
