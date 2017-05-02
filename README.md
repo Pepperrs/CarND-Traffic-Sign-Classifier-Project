@@ -20,11 +20,11 @@ The goals / steps of this project are the following:
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/colour_image_example.png "Color image example"
 [image5]: ./examples/grayscale_example.png "Grayscale example"
-[image6]: ./examples/Task3/crop1.png "Cropped image 1"
-[image7]: ./examples/Task3/crop2.png "Cropped image 2"
-[image8]: ./examples/Task3/crop3.png "Cropped image 3"
-[image9]: ./examples/Task3/crop4.png "Cropped image 4"
-[image10]: ./examples/Task3/crop5.png "Cropped image 5"
+[image6]: ./examples/Task3/crop1_lg.png "New image 1"
+[image7]: ./examples/Task3/crop2_lg.png "New image 2"
+[image8]: ./examples/Task3/crop3_lg.png "New image 3"
+[image9]: ./examples/Task3/crop4_lg.png "New image 4"
+[image10]: ./examples/Task3/crop5_lg.png "New image 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -138,8 +138,11 @@ having a good accuracy of almost 0.95 for some runs I believe this model to be s
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image6] 
+![alt text][image7] 
+![alt text][image8] 
+![alt text][image9] 
+![alt text][image10]
 
 The first image might be difficult to classify because ...
 
