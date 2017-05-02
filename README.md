@@ -52,12 +52,8 @@ signs data set:
 
 #### 2. Include an exploratory visualization of the dataset and identify where the code is in your code file.
 
-The code for this step is contained in the fourth code cell of the IPython notebook.  
+The code for this step is contained in the fourth code cell of the IPython notebook and displays an image of each class of sign.
 
-#todo 
-
-
-![alt text][image1]
 
 ### Design and Test a Model Architecture
 
