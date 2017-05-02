@@ -52,7 +52,7 @@ signs data set:
 
 #### 2. Include an exploratory visualization of the dataset and identify where the code is in your code file.
 
-The code for this step is contained in the third code cell of the IPython notebook.  
+The code for this step is contained in the xxx code cell of the IPython notebook.  
 
 #todo 
 
@@ -63,7 +63,7 @@ The code for this step is contained in the third code cell of the IPython notebo
 
 #### 1. Describe how, and identify where in your code, you preprocessed the image data. What tecniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc.
 
-The code for this step is contained in the fourth code cell of the IPython notebook.
+The code for this step is contained in the sixth to eigth code cell of the IPython notebook.
 
 My preprocessing pipeline consisted of 
 1. **a conversion to grayscale**
@@ -116,13 +116,13 @@ My final model consisted of a LeNet-5 Architecture with added dropout in Layer 3
 
 #### 4. Describe how, and identify where in your code, you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-The code for training the model is located in the eigth cell of the ipython notebook. 
+The code for training the model is located in the eleventh cell of the ipython notebook. 
 
 To train the model, I did not use an optimizer, my batch size was set to 64 and i trained the model for 50 epochs. The learning rate was set to 0.001, with a mu of 0 and a sigma of 0.1.
 
 #### 5. Describe the approach taken for finding a solution. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
-The code for calculating the accuracy of the model is located in the ninth cell of the Ipython notebook.
+The code for calculating the accuracy of the model is located in the 19th cell of the Ipython notebook.
 
 My final model results were:
 * validation set accuracy of 0.948
@@ -152,34 +152,89 @@ In this image the dominant signpost might prove the image difficult to describe.
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-The code for making predictions on my final model is located in the tenth cell of the Ipython notebook.
+The code for making predictions on my final model is located in the 19th cell of the Ipython notebook.
 
-Here are the results of the prediction:
+
+
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Yield | Yield | 
+| Pedestrian | Traffic signals |
+| Turn Right | No Passing |
+| No Vehicles | No Vehicles |
+| Priority Road | Priority Road |
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 3 of the 5 traffic signs, which gives an accuracy of 60%.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+The code for making predictions on my final model is located in the 21st cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+
+![alt text][image6]
+
+For the first image, the model is completely sure that this is a yield sign (probability of 1.0), and the image does contain a yield sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 1.0         			| Stop sign   									| 
+| .0     				| Priority Road 										|
+| .0					| Keep right										|
+| .0	      			| Speed limit (20km/h)				 				|
+| .0				    | Speed limit (30km/h)    							|
+
+-----
+![alt text][image7]
+
+For the secound image, the model is relatively sure that this is a traffic signals sign (probability of 0.89), however the image does contain a pedestrian sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.89         			| Traffic signals 			| 
+| .10     				| Go straight 			|
+| .003					| Bumpy road			|
+| .001	      			| Children crossing 				 	|
+| .001	      			| Road narrows				 	|
+
+-----
+
+![alt text][image8]
 
 
-For the second image ... 
+For the third image, the model is somewhat sure that this is a No passing sign (probability of 0.41), however the image contains a Turn right sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .41         			| No Passing   				| 
+| .25     				| No Passing for 3.5 Tonnes	|
+| .20					| Speed limit (120km/h)		|
+| .05	      			| Turn right			 	|
+| .03	      			| Speed limit (100km/h)		 	|
+
+-----
+![alt text][image9]
+
+For the fourth image, the model is completely sure that this is a No vehicles sign (probability of 1.0), and the image does contain a No Vehicles sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0         			| No Vehicles   				| 
+| .0     				| No passing	|
+| .0					| Yield		|
+| .0	      			| Priority road			 	|
+| .0	      			| Speed limit (60km/h)		 	|
+-----
+![alt text][image10]
+
+For the fifth image, the model is completely sure that this is a Priority road sign (probability of 1.0), and the image does contain a Priority road sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0         			| Priority road				| 
+| .0     				| Yield	|
+| .0					| No Passing		|
+| .0	      			| Roundabout			 	|
+| .0	      			| End of no passing		 	|
+
