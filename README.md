@@ -140,14 +140,23 @@ Here are five German traffic signs that I found on the web:
 source: Sonja Krause-Harder on the Carnd slack. 
 
 ![alt text][image6] 
+
 This image should be easy to identify, as it has a distinct shape and there are almost no shadows or other distortions.
+
 ![alt text][image7] 
+
 The pedestrian image might be difficult to classify as it has stickers on it and also there are many other signs that have a similiar shape.
+
 ![alt text][image8] 
+
 Same as the image before, this image might be difficult to classify, as it again has the large round shape with some distinguishing content.
+
 ![alt text][image9] 
+
 The no Vehicles image should be straight forward to classify, however there are artifacts from other signs present on the image.
+
 ![alt text][image10]
+
 In this image the dominant signpost might prove the image difficult to describe.
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
